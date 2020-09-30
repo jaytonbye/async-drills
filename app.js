@@ -1,23 +1,24 @@
 
-function getWords(word){
-    console.log(word)
-}
+(function getWords(first,second,third,fourth){
+    setTimeout(()=>{
+        console.log(first)
+        setTimeout(()=>{
+            console.log(second)
+            setTimeout(()=>{
+                console.log(third)
+                setTimeout(()=>{
+                    console.log(fourth)
+                },1000)
+            },2000)
+        },3000)
+    },0)
+})('I','am','happy','now')
 
-setTimeout(()=>{
-    getWords('first of get words')
-},0)
 
-setTimeout(()=>{
-    getWords('2nd of get words')
-},3000)
 
-setTimeout(()=>{
-    getWords('3rd of get words')
-},5000)
 
-setTimeout(()=>{
-    getWords('4th of get words')
-},6000)
+
+
 
 function done(){
     console.log("Job's done!")
